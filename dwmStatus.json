@@ -1,6 +1,6 @@
 {
-    "sound_device": "0",
-    "network_interface": "wlp3s0",
+    "sound_device": "card 0",
+    "network_interface": "wlp2s0",
 
     "icons": [
         {"name": "calendar",    "icon": "\uf073"},

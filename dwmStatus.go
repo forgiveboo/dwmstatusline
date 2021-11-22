@@ -40,7 +40,8 @@ var (
 	cores          = runtime.NumCPU()
 	rx_old         = 0
 	tx_old         = 0
-    keys           = []string{"rx", "tx", "brightness", "volume", "temp", "battery", "cpu", "ram", "calendar", "clock"}
+    keys           = []string{"rx", "tx", "brightness", "volume", "temp", "battery", "cpu", "calendar", "clock"}
+//  keys           = []string{"rx", "tx", "brightness", "volume", "temp", "battery", "cpu", "ram", "calendar", "clock"}
 	colors         = []DwmColor{{"\x06", "\x07"}, {"\x08", "\x09"}, {"\x0a", "\x0b"}, {"\x0c", "\x0d"}, {"\x0e", "\x0f"}, {"\x10", "\x11"}}
 //	colors             = []DwmColor{{"\x0a", "\x0b"}, {"\x0b", "\x0a"}}
 	valid_net_device   = false
@@ -260,7 +261,7 @@ func collect_temperature(key string) {
 		icon = icons["temp0"]
     }
 
-	collected_data[key] = fmt.Sprintf("%s%3dC", icon, temp)
+	collected_data[key] = fmt.Sprintf("%s%3d°C", icon, temp)
 }
 
 func collect_power(key string) {
