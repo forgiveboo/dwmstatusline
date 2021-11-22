@@ -1,5 +1,4 @@
--- 这不是我写的！！！
-dwmStatus
+这不是我写的！！！
 ===============
 ![](https://github.com/KimHe/dwmStatus/blob/master/demo.png)
 
